@@ -132,7 +132,15 @@
        /* padding: 10px 40px; */
        text-align: center;
 }
-.bttn a .intro__content-title {
+@media screen and (max-width: 786px) {
+  .bttn {
+position: relative !important;
+left: 0;
+margin: 100px auto;
+  }
+  
+}
+.bttn a.intro__content-title {
   display: block;
   color: #fff!important;
   margin: auto;

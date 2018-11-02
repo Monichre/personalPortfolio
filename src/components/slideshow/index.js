@@ -148,7 +148,7 @@ class SlideShow extends Component {
 
 const SlideShowNavigation = ({ slides, active, nextSlide, prevSlide }) => (
   <nav className="slideshow__nav">
-    <div onClick={prevSlide}>
+    <div onClick={prevSlide} className='prevButtton'>
       <ArrowsUp />
     </div>
     {slides.map((slide, i) => (
@@ -159,7 +159,7 @@ const SlideShowNavigation = ({ slides, active, nextSlide, prevSlide }) => (
         {i + 1}
       </button>
     ))}
-    <div onClick={nextSlide}>
+    <div onClick={nextSlide} className='nextButton'>
       <ArrowsDown />
     </div>
   </nav>

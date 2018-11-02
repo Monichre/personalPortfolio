@@ -37,7 +37,7 @@ const Intro = () => {
             rel='noopener'
             target='_blank'
             href='https://www.soundpruf.com/'
-            style={{ marginLeft: '10px' }}>
+            style={{ marginLeft: '10px', color: 'white' }}>
             <img src='/img/x.svg' alt='' height='15' width='15' /> Soundpruf
           </a>
         </p>
