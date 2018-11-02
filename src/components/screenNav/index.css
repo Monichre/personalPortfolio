@@ -1,0 +1,85 @@
+.icon-wrapper-container {
+  position: fixed;
+  bottom: 0;
+  margin: 50px;
+  width: auto;
+  height: 20px;
+  cursor: pointer;
+  z-index: 9997;
+  opacity: 0;
+  -webkit-transform: translate3d(-100px, 100px, 0);
+  -ms-transform: translate3d(-100px, 100px, 0);
+  transform: translate3d(-100px, 100px, 0)
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+  .icon-wrapper-container {
+    margin: 30px
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .icon-wrapper-container {
+    margin: 15px
+  }
+}
+
+.icon-wrapper {
+  position: relative;
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-clip: padding-box
+}
+
+.icon-wrapper.main {
+  width: 14px;
+  height: 14px;
+  margin: 3px 10px 3px 3px;
+  z-index: 9
+}
+
+.icon-wrapper.main img {
+  color: #fff !important;
+  fill: #fff
+}
+
+.icon-wrapper-container .icon-wrapper:not(.main) img {
+  visibility: hidden;
+  height: 100%;
+  color: #fff
+}
+
+.icon-wrapper-container:hover .icon-wrapper img {
+  visibility: visible;
+  height: 100%;
+  width: 100%
+}
+
+.icon-wrapper.black {
+  width: 12px;
+  height: 12px;
+  margin: 0 10px;
+  -webkit-transform: translateX(-27px);
+  -ms-transform: translateX(-27px);
+  transform: translateX(-27px)
+}
+
+.icon-wrapper.grey {
+  width: 12px;
+  height: 12px;
+  margin: 0 10px;
+  -webkit-transform: translateX(-55px);
+  -ms-transform: translateX(-55px);
+  transform: translateX(-55px)
+}
+
+.icon-wrapper.white {
+  width: 13px;
+  height: 13px;
+  margin: 0 10px;
+  -webkit-transform: translateX(-81px);
+  -ms-transform: translateX(-81px);
+  transform: translateX(-81px)
+}

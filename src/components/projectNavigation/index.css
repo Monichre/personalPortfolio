@@ -1,0 +1,46 @@
+
+.project-navigation-wrapper {
+	position: fixed;
+	top: 50%;
+	left: 50px;
+	margin-top: -90px;
+	z-index: 10;
+}
+
+.project-navigation-wrapper ul li a {
+	font-family: Georgia, "Times New Roman", serif;
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 10px;
+	line-height: 5.5;
+	position: relative;
+	display: block;
+	width: 55px;
+	height: 45px;
+	text-align: center;
+}
+
+.project-navigation-wrapper ul li a:before {
+	content: "";
+	right: 100%;
+	opacity: 0;
+	top: 27px;
+	width: 0;
+	height: 1px;
+	background-color: black;
+	position: absolute;
+	-webkit-transition: all, 0.5s, cubic-bezier(0.62, 0.28, 0.23, 0.99) 1s ease-in-out;
+	-khtml-transition: all, 0.5s, cubic-bezier(0.62, 0.28, 0.23, 0.99) 1s ease-in-out;
+	-moz-transition: all, 0.5s, cubic-bezier(0.62, 0.28, 0.23, 0.99) 1s ease-in-out;
+	-ms-transition: all, 0.5s, cubic-bezier(0.62, 0.28, 0.23, 0.99) 1s ease-in-out;
+	-o-transition: all, 0.5s, cubic-bezier(0.62, 0.28, 0.23, 0.99) 1s ease-in-out;
+	transition: all, 0.5s, cubic-bezier(0.62, 0.28, 0.23, 0.99) 1s ease-in-out;
+}
+
+.project-navigation-wrapper ul li.active a {
+	color: black;
+}
+
+.project-navigation-wrapper ul li.active a:before {
+	opacity: 1;
+	width: 45px;
+}

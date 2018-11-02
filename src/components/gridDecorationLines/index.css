@@ -1,0 +1,26 @@
+.line {
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(to bottom right, #da5a56e6 0%, #2f5056cc 60%);
+    z-index: 9;
+    pointer-events: none;
+    position: relative;
+}
+
+.line.decor-line {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 1px;
+    z-index: 20;
+}
+
+.line.decor-line.line--right {
+    left: auto;
+    right: 12vw;
+}
+
+.line.decor-line.line--left {
+    right: auto;
+    left: 12vw;
+}

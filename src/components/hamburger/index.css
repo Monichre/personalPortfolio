@@ -1,0 +1,81 @@
+.hamburger-container {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  height: 40px;
+  margin-top: -8px;
+  cursor: pointer;
+  z-index: 99999992;
+  /* opacity: 0; */
+
+}
+
+@media only screen and (max-width:767px) {
+  .hamburger-container {
+    top: 15px;
+    right: 15px
+  }
+}
+
+.lineBottom,
+.lineTop {
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background: #6e6e6e;
+  right: 0;
+  border-radius: 2px;
+  background-clip: padding-box;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all .2s cubic-bezier(.615, .19, .305, .91) 0s;
+  -o-transition: all .2s cubic-bezier(.615, .19, .305, .91) 0s;
+  transition: all .2s cubic-bezier(.615, .19, .305, .91) 0s
+}
+
+.lineTop {
+  top: 14px
+}
+
+.lineTop:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-radius: 2px;
+  background-clip: padding-box;
+  background-color: #9f9999;
+  z-index: 1;
+  -webkit-transition: all .12s cubic-bezier(.615, .19, .305, .91) 0s;
+  -o-transition: all .12s cubic-bezier(.615, .19, .305, .91) 0s;
+  transition: all .12s cubic-bezier(.615, .19, .305, .91) 0s
+}
+
+.lineBottom {
+  bottom: 16px
+}
+
+.lineBottom:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-radius: 2px;
+  background-clip: padding-box;
+  background-color: #9f9999;
+  z-index: 1;
+  -webkit-transition: all .12s cubic-bezier(.615, .19, .305, .91) 85ms;
+  -o-transition: all .12s cubic-bezier(.615, .19, .305, .91) 85ms;
+  transition: all .12s cubic-bezier(.615, .19, .305, .91) 85ms
+}
+
+.hamburger-container:hover .lineBottom:before,
+.hamburger-container:hover .lineTop:before {
+  width: 100%
+}
