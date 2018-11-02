@@ -3378,3 +3378,7 @@ a {
     margin-top: 10px;
   }
 }
+
+a {
+  color: inherit!important;
+}
